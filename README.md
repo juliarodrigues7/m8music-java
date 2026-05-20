@@ -1,11 +1,11 @@
-# 🎶 M8MUSIC
+#  M8MUSIC
 
 > Aplicação desenvolvida em **Java** com **Spring Boot** e **OracleSQL**, focada no gerenciamento de pedidos musicais entre clientes e cantores.
 > Integra autenticação JWT, autorização por papéis, mensageria assíncrona com **RabbitMQ**, busca musical via **Spotify API** e documentação com **Swagger**.
 
 ---
 
-## 👥 Integrantes do Grupo
+##  Integrantes do Grupo
 
 | Nome Completo | Função / Responsabilidade |
 |---|---|
@@ -33,7 +33,7 @@
 
 ---
 
-## 📈 Evolução entre Sprints
+##  Evolução entre Sprints
 
 ### Sprint 1
 - CRUD básico de entidades (Cantor, Cliente, Música, Pedido)
@@ -56,7 +56,7 @@
 
 ---
 
-## ⚙️ Como Rodar a Aplicação
+##  Como Rodar a Aplicação
 
 ### Pré-requisitos
 
@@ -104,7 +104,7 @@
 
 ---
 
-## 🔐 Autenticação e Autorização
+## Autenticação e Autorização
 
 A API utiliza **JWT (JSON Web Token)** para autenticação stateless. Existem dois tipos de usuário com fluxos distintos:
 
@@ -133,7 +133,7 @@ Authorization: Bearer <seu_token>
 
 ---
 
-## 🔗 Endpoints da API
+##  Endpoints da API
 
 ### Autenticação (`/auth`)
 
@@ -202,7 +202,7 @@ Authorization: Bearer <seu_token>
 
 ---
 
-## 🐇 Mensageria com RabbitMQ
+##  Mensageria com RabbitMQ
 
 Ao criar um pedido, um evento é publicado automaticamente no RabbitMQ:
 
@@ -217,7 +217,7 @@ O consumidor (`PedidoConsumer`) processa os eventos da fila e os registra em log
 
 ---
 
-## 🎵 Integração com Spotify
+##  Integração com Spotify
 
 A busca de músicas é feita via **OpenFeign** com autenticação por **Client Credentials OAuth**. A integração inclui:
 
@@ -227,7 +227,7 @@ A busca de músicas é feita via **OpenFeign** com autenticação por **Client C
 
 ---
 
-## 🧩 Diagramas da Aplicação
+##  Diagramas da Aplicação
 
 ### MER
 ![Modelo de Entidade Relacionamento](./docs/mer_bd.jpeg)
@@ -237,7 +237,7 @@ A busca de músicas é feita via **OpenFeign** com autenticação por **Client C
 
 ---
 
-## 🧾 Tecnologias Utilizadas
+##  Tecnologias Utilizadas
 
 | Tecnologia | Versão   | Uso |
 |---|----------|---|
@@ -258,7 +258,7 @@ A busca de músicas é feita via **OpenFeign** com autenticação por **Client C
 
 ---
 
-## 🗃️ Script de Criação do Banco de Dados
+##  Script de Criação do Banco de Dados
 
 Caso necessário, utilize o script abaixo para recriar as tabelas:
 
@@ -308,12 +308,12 @@ CREATE TABLE avaliacao (
 
 ---
 
-## 🎥 Vídeo de Apresentação
+##  Vídeo de Apresentação
 
 📺 [Assista à apresentação no YouTube](https://youtu.be/8oGh5lXjscI)
 
 ---
 
-## 📜 Observação
+## Observação
 
 Este projeto foi desenvolvido para fins acadêmicos na disciplina de **Desenvolvimento Web — Sprint 4 (Java)** na **FIAP**.
